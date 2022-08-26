@@ -1,0 +1,26 @@
+{
+  "name": "challenge-ci",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cross-env NODE_ENV=test jest --testTimeout=2000 --coverage",
+    "start": "node source/app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/jest": "^28.1.8",
+    "cross-env": "^7.0.3",
+    "express": "^4.18.1",
+    "jest": "^29.0.0",
+    "sonar-scanner": "^3.1.0",
+    "supertest": "^6.2.4"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  }
+}
